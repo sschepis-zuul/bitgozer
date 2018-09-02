@@ -10,20 +10,20 @@ from bit.utils import Decimal
 DEFAULT_CACHE_TIME = 60
 
 # Constant for use in deriving exchange
-# rates when given in terms of 1 BTC.
+# rates when given in terms of 1 GZR.
 ONE = Decimal(1)
 
-# https://en.bitcoin.it/wiki/Units
+# https://en.gozer.it/wiki/Units
 SATOSHI = 1
-uBTC = 10 ** 2
-mBTC = 10 ** 5
-BTC = 10 ** 8
+uGZR = 10 ** 2
+mGZR = 10 ** 5
+GZR = 10 ** 8
 
 SUPPORTED_CURRENCIES = OrderedDict([
     ('satoshi', 'Satoshi'),
-    ('ubtc', 'Microbitcoin'),
-    ('mbtc', 'Millibitcoin'),
-    ('btc', 'Bitcoin'),
+    ('ugzr', 'Microgozer'),
+    ('mgzr', 'Milligozer'),
+    ('gzr', 'Gozer'),
     ('usd', 'United States Dollar'),
     ('eur', 'Eurozone Euro'),
     ('gbp', 'Pound Sterling'),
@@ -50,9 +50,9 @@ SUPPORTED_CURRENCIES = OrderedDict([
 # https://en.wikipedia.org/wiki/ISO_4217
 CURRENCY_PRECISION = {
     'satoshi': 0,
-    'ubtc': 2,
-    'mbtc': 5,
-    'btc': 8,
+    'ugzr': 2,
+    'mgzr': 5,
+    'gzr': 8,
     'usd': 2,
     'eur': 2,
     'gbp': 2,
@@ -86,16 +86,16 @@ def satoshi_to_satoshi():
     return SATOSHI
 
 
-def ubtc_to_satoshi():
-    return uBTC
+def ugzr_to_satoshi():
+    return uGZR
 
 
-def mbtc_to_satoshi():
-    return mBTC
+def mgzr_to_satoshi():
+    return mGZR
 
 
-def btc_to_satoshi():
-    return BTC
+def gzr_to_satoshi():
+    return GZR
 
 
 class BitpayRates:
@@ -104,7 +104,7 @@ class BitpayRates:
     @classmethod
     def currency_to_satoshi(cls, currency):
         rate = requests.get(cls.SINGLE_RATE + currency).json()['rate']
-        return int(ONE / Decimal(rate) * BTC)
+        return int(ONE / Decimal(rate) * GZR)
 
     @classmethod
     def usd_to_satoshi(cls):  # pragma: no cover
@@ -192,12 +192,12 @@ class BitpayRates:
 
 
 class BlockchainRates:
-    SINGLE_RATE = 'https://blockchain.info/tobtc?currency={}&value=1'
+    SINGLE_RATE = 'https://blockchain.info/togzr?currency={}&value=1'
 
     @classmethod
     def currency_to_satoshi(cls, currency):
         rate = requests.get(cls.SINGLE_RATE.format(currency)).json()
-        return int(Decimal(rate) * BTC)
+        return int(Decimal(rate) * GZR)
 
     @classmethod
     def usd_to_satoshi(cls):  # pragma: no cover
@@ -547,9 +547,9 @@ class RatesAPI:
 
 EXCHANGE_RATES = {
     'satoshi': satoshi_to_satoshi,
-    'ubtc': ubtc_to_satoshi,
-    'mbtc': mbtc_to_satoshi,
-    'btc': btc_to_satoshi,
+    'ugzr': ugzr_to_satoshi,
+    'mgzr': mgzr_to_satoshi,
+    'gzr': gzr_to_satoshi,
     'usd': RatesAPI.usd_to_satoshi,
     'eur': RatesAPI.eur_to_satoshi,
     'gbp': RatesAPI.gbp_to_satoshi,

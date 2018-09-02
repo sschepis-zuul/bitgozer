@@ -130,7 +130,7 @@ class BaseKey:
 
 
 class PrivateKey(BaseKey):
-    """This class represents a Bitcoin private key. ``Key`` is an alias.
+    """This class represents a Gozer private key. ``Key`` is an alias.
 
     :param wif: A private key serialized to the Wallet Import Format. If the
                 argument is not supplied, a new private key will be created.
@@ -222,7 +222,7 @@ class PrivateKey(BaseKey):
                         must be :ref:`supported <supported currencies>`.
         :type outputs: ``list`` of ``tuple``
         :param fee: The number of satoshi per byte to pay to miners. By default
-                    Bit will poll `<https://bitcoinfees.earn.com>`_ and use a fee
+                    Bit will poll `<https://gozerfees.earn.com>`_ and use a fee
                     that will allow your transaction to be confirmed as soon as
                     possible.
         :type fee: ``int``
@@ -270,7 +270,7 @@ class PrivateKey(BaseKey):
                         must be :ref:`supported <supported currencies>`.
         :type outputs: ``list`` of ``tuple``
         :param fee: The number of satoshi per byte to pay to miners. By default
-                    Bit will poll `<https://bitcoinfees.earn.com>`_ and use a fee
+                    Bit will poll `<https://gozerfees.earn.com>`_ and use a fee
                     that will allow your transaction to be confirmed as soon as
                     possible.
         :type fee: ``int``
@@ -318,7 +318,7 @@ class PrivateKey(BaseKey):
                            compressed public key. This influences the fee.
         :type compressed: ``bool``
         :param fee: The number of satoshi per byte to pay to miners. By default
-                    Bit will poll `<https://bitcoinfees.earn.com>`_ and use a fee
+                    Bit will poll `<https://gozerfees.earn.com>`_ and use a fee
                     that will allow your transaction to be confirmed as soon as
                     possible.
         :type fee: ``int``
@@ -423,7 +423,7 @@ class PrivateKey(BaseKey):
 
 
 class PrivateKeyTestnet(BaseKey):
-    """This class represents a testnet Bitcoin private key. **Note:** coins
+    """This class represents a testnet Gozer private key. **Note:** coins
     on the test network have no monetary value!
 
     :param wif: A private key serialized to the Wallet Import Format. If the
@@ -515,7 +515,7 @@ class PrivateKeyTestnet(BaseKey):
                         must be :ref:`supported <supported currencies>`.
         :type outputs: ``list`` of ``tuple``
         :param fee: The number of satoshi per byte to pay to miners. By default
-                    Bit will poll `<https://bitcoinfees.earn.com>`_ and use a fee
+                    Bit will poll `<https://gozerfees.earn.com>`_ and use a fee
                     that will allow your transaction to be confirmed as soon as
                     possible.
         :type fee: ``int``
@@ -563,7 +563,7 @@ class PrivateKeyTestnet(BaseKey):
                         must be :ref:`supported <supported currencies>`.
         :type outputs: ``list`` of ``tuple``
         :param fee: The number of satoshi per byte to pay to miners. By default
-                    Bit will poll `<https://bitcoinfees.earn.com>`_ and use a fee
+                    Bit will poll `<https://gozerfees.earn.com>`_ and use a fee
                     that will allow your transaction to be confirmed as soon as
                     possible.
         :type fee: ``int``
@@ -611,7 +611,7 @@ class PrivateKeyTestnet(BaseKey):
                            compressed public key. This influences the fee.
         :type compressed: ``bool``
         :param fee: The number of satoshi per byte to pay to miners. By default
-                    Bit will poll `<https://bitcoinfees.earn.com>`_ and use a fee
+                    Bit will poll `<https://gozerfees.earn.com>`_ and use a fee
                     that will allow your transaction to be confirmed as soon as
                     possible.
         :type fee: ``int``
@@ -718,7 +718,7 @@ class PrivateKeyTestnet(BaseKey):
 Key = PrivateKey
 
 class MultiSig:
-    """This class represents a Bitcoin multisignature contract.
+    """This class represents a Gozer multisignature contract.
     **Note:** coins on the test network have no monetary value!
 
     :param private_key: A class representing a private key.
@@ -837,7 +837,7 @@ class MultiSig:
                         must be :ref:`supported <supported currencies>`.
         :type outputs: ``list`` of ``tuple``
         :param fee: The number of satoshi per byte to pay to miners. By default
-                    Bit will poll `<https://bitcoinfees.21.co>`_ and use a fee
+                    Bit will poll `<https://gozerfees.21.co>`_ and use a fee
                     that will allow your transaction to be confirmed as soon as
                     possible.
         :type fee: ``int``
@@ -885,7 +885,7 @@ class MultiSig:
                         must be :ref:`supported <supported currencies>`.
         :type outputs: ``list`` of ``tuple``
         :param fee: The number of satoshi per byte to pay to miners. By default
-                    Bit will poll `<https://bitcoinfees.21.co>`_ and use a fee
+                    Bit will poll `<https://gozerfees.21.co>`_ and use a fee
                     that will allow your transaction to be confirmed as soon as
                     possible.
         :type fee: ``int``
@@ -933,7 +933,7 @@ class MultiSig:
                            compressed public key. This influences the fee.
         :type compressed: ``bool``
         :param fee: The number of satoshi per byte to pay to miners. By default
-                    Bit will poll `<https://bitcoinfees.21.co>`_ and use a fee
+                    Bit will poll `<https://gozerfees.21.co>`_ and use a fee
                     that will allow your transaction to be confirmed as soon as
                     possible.
         :type fee: ``int``
@@ -993,7 +993,7 @@ class MultiSig:
 
 
 class MultiSigTestnet:
-    """This class represents a testnet Bitcoin multisignature contract.
+    """This class represents a testnet Gozer multisignature contract.
     **Note:** coins on the test network have no monetary value!
 
     :param private_key: A class representing a testnet private key.
@@ -1112,7 +1112,7 @@ class MultiSigTestnet:
                         must be :ref:`supported <supported currencies>`.
         :type outputs: ``list`` of ``tuple``
         :param fee: The number of satoshi per byte to pay to miners. By default
-                    Bit will poll `<https://bitcoinfees.21.co>`_ and use a fee
+                    Bit will poll `<https://gozerfees.21.co>`_ and use a fee
                     that will allow your transaction to be confirmed as soon as
                     possible.
         :type fee: ``int``
@@ -1160,7 +1160,7 @@ class MultiSigTestnet:
                         must be :ref:`supported <supported currencies>`.
         :type outputs: ``list`` of ``tuple``
         :param fee: The number of satoshi per byte to pay to miners. By default
-                    Bit will poll `<https://bitcoinfees.21.co>`_ and use a fee
+                    Bit will poll `<https://gozerfees.21.co>`_ and use a fee
                     that will allow your transaction to be confirmed as soon as
                     possible.
         :type fee: ``int``
@@ -1208,7 +1208,7 @@ class MultiSigTestnet:
                            compressed public key. This influences the fee.
         :type compressed: ``bool``
         :param fee: The number of satoshi per byte to pay to miners. By default
-                    Bit will poll `<https://bitcoinfees.21.co>`_ and use a fee
+                    Bit will poll `<https://gozerfees.21.co>`_ and use a fee
                     that will allow your transaction to be confirmed as soon as
                     possible.
         :type fee: ``int``

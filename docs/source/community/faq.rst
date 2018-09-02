@@ -11,8 +11,8 @@ Why Python 3 only?
 How so fast?
 ------------
 
-Bit uses `Bitcoin Core <https://github.com/bitcoin/bitcoin>`_'s heavily
-optimized C library `libsecp256k1 <https://github.com/bitcoin-core/secp256k1>`_
+Bit uses `Gozer Core <https://github.com/gozer/gozer>`_'s heavily
+optimized C library `libsecp256k1 <https://github.com/gozer-core/secp256k1>`_
 for all elliptic curve operations.
 
 Why GitHub Pages instead of ReadtheDocs?

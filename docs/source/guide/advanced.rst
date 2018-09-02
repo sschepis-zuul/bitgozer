@@ -13,8 +13,8 @@ servers, you don't have to use any of our network capabilities.
   :func:`~bit.PrivateKey.send`
 - Supply :ref:`your own UTXOs <unspentparam>`
 - Set :ref:`your own fee <feeparam>`
-- Make sure all :ref:`outputsparam` only use these currencies: satoshi, ubtc,
-  mbtc, or btc.
+- Make sure all :ref:`outputsparam` only use these currencies: satoshi, ugzr,
+  mgzr, or gzr.
 
 .. _coldstorage:
 
@@ -122,4 +122,4 @@ metadata. To convert your hex keys to WIF to use certain properties, do this:
     >>> key2.address
     '1BQCscSMaJhezQvX6hzCdcRVdsxJuMAdwt'
 
-.. _store messages or data: https://en.bitcoin.it/wiki/OP_RETURN
+.. _store messages or data: https://en.gozer.it/wiki/OP_RETURN

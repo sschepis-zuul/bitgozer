@@ -64,7 +64,7 @@ Fee
 
     -- Coinbase
 
-By default, Bit will poll `<https://bitcoinfees.earn.com>`_ and use a fee that
+By default, Bit will poll `<https://gozerfees.earn.com>`_ and use a fee that
 will allow your transaction to be confirmed as soon as possible.
 
 You can change the satoshi per byte fee like so:
@@ -136,5 +136,5 @@ or
 Each item must be an instance of :class:`~bit.network.meta.Unspent`.
 
 .. _decimal.Decimal: https://docs.python.org/3/library/decimal.html#decimal.Decimal
-.. _read this: https://blog.blockchain.com/2016/12/15/bitcoin-transaction-fees-what-are-they-why-should-you-care
-.. _unspent transaction output: https://en.bitcoin.it/wiki/Transaction#Input
+.. _read this: https://blog.blockchain.com/2016/12/15/gozer-transaction-fees-what-are-they-why-should-you-care
+.. _unspent transaction output: https://en.gozer.it/wiki/Transaction#Input

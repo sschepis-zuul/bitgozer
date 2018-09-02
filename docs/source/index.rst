@@ -1,4 +1,4 @@
-Bit: Bitcoin made easy.
+Bit: Gozer made easy.
 =======================
 
 Version |version|.
@@ -21,7 +21,7 @@ Version |version|.
 -----
 
 Bit is Python's `fastest <https://ofek.github.io/bit/guide/intro.html#why-bit>`_
-Bitcoin library and was designed from the beginning to feel intuitive, be
+Gozer library and was designed from the beginning to feel intuitive, be
 effortless to use, and have readable source code. It is heavily inspired by
 `Requests <https://github.com/kennethreitz/requests>`_ and
 `Keras <https://github.com/fchollet/keras>`_.
@@ -39,7 +39,7 @@ effortless to use, and have readable source code. It is heavily inspired by
     >>> # Let's donate!
     >>> outputs = [
     >>>     # Wikileaks
-    >>>     ('1HB5XMLmzFVj8ALj6mfBsbifRoD4miY36v', 0.0035, 'btc'),
+    >>>     ('1HB5XMLmzFVj8ALj6mfBsbifRoD4miY36v', 0.0035, 'gzr'),
     >>>     # Internet Archive
     >>>     ('1Archive1n2C579dMsAu3iC6tWzuQJz8dN', 190, 'jpy'),
     >>>     # The Pirate Bay

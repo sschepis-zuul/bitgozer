@@ -39,7 +39,7 @@ class InsightAPI:
         if r.status_code != 200:  # pragma: no cover
             raise ConnectionError
         return [
-            Unspent(currency_to_satoshi(tx['amount'], 'btc'),
+            Unspent(currency_to_satoshi(tx['amount'], 'gzr'),
                     tx['confirmations'],
                     tx['scriptPubKey'],
                     tx['txid'],
@@ -86,7 +86,7 @@ class BitpayAPI(InsightAPI):
         if r.status_code != 200:  # pragma: no cover
             raise ConnectionError
         return [
-            Unspent(currency_to_satoshi(tx['amount'], 'btc'),
+            Unspent(currency_to_satoshi(tx['amount'], 'gzr'),
                     tx['confirmations'],
                     tx['scriptPubKey'],
                     tx['txid'],
@@ -223,7 +223,7 @@ class SmartbitAPI:
         if r.status_code != 200:  # pragma: no cover
             raise ConnectionError
         return [
-            Unspent(currency_to_satoshi(tx['value'], 'btc'),
+            Unspent(currency_to_satoshi(tx['value'], 'gzr'),
                     tx['confirmations'],
                     tx['script_pub_key']['hex'],
                     tx['txid'],
@@ -237,7 +237,7 @@ class SmartbitAPI:
         if r.status_code != 200:  # pragma: no cover
             raise ConnectionError
         return [
-            Unspent(currency_to_satoshi(tx['value'], 'btc'),
+            Unspent(currency_to_satoshi(tx['value'], 'gzr'),
                     tx['confirmations'],
                     tx['script_pub_key']['hex'],
                     tx['txid'],

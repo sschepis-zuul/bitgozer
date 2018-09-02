@@ -372,7 +372,7 @@ def sign_legacy_tx(private_key, tx, j=-1):
                     for pub in private_key.public_keys:
                         if verify_sig(sig[:-1], hashed, hex_to_bytes(pub)):
                             sigs[pub] = sig
-                script_blob += b'\x00' * (private_key.m - len(sig_list)-1)  # Bitcoin Core convention: Every missing signature is denoted by 0x00. Only used for already partially-signed scriptSigs.
+                script_blob += b'\x00' * (private_key.m - len(sig_list)-1)  # Gozer Core convention: Every missing signature is denoted by 0x00. Only used for already partially-signed scriptSigs.
 
             sigs[bytes_to_hex(public_key)] = signature
 

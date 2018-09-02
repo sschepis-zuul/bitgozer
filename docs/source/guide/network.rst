@@ -25,7 +25,7 @@ in satoshi.
 
 .. code-block:: python
 
-    >>> key.get_balance('btc')
+    >>> key.get_balance('gzr')
     '0.82721202'
     >>> key.balance
     82721202
@@ -35,7 +35,7 @@ terms of other currencies using :func:`~bit.PrivateKey.balance_as`.
 
 .. code-block:: python
 
-    >>> key.balance_as('mbtc')
+    >>> key.balance_as('mgzr')
     '827.21202'
     >>> key.balance_as('usd')
     '944.06'
@@ -121,6 +121,6 @@ NetworkAPI
 Private key network operations use :class:`~bit.network.NetworkAPI`. For each method,
 it polls a service and if an error occurs it tries another.
 
-.. _satoshi: https://en.bitcoin.it/wiki/Satoshi_(unit)
-.. _blockchain: https://en.bitcoin.it/wiki/Block_chain
-.. _unspent transaction outputs: https://en.bitcoin.it/wiki/Transaction#Input
+.. _satoshi: https://en.gozer.it/wiki/Satoshi_(unit)
+.. _blockchain: https://en.gozer.it/wiki/Block_chain
+.. _unspent transaction outputs: https://en.gozer.it/wiki/Transaction#Input

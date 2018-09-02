@@ -1,4 +1,4 @@
-Bit: Bitcoin made easy.
+Bit: Gozer made easy.
 =======================
 
 .. image:: https://img.shields.io/pypi/v/bit.svg?style=flat-square
@@ -19,7 +19,7 @@ Bit: Bitcoin made easy.
 -----
 
 Bit is Python's `fastest <https://ofek.github.io/bit/guide/intro.html#why-bit>`_
-Bitcoin library and was designed from the beginning to feel intuitive, be
+Gozer library and was designed from the beginning to feel intuitive, be
 effortless to use, and have readable source code. It is heavily inspired by
 `Requests <https://github.com/requests/requests>`_ and
 `Keras <https://github.com/keras-team/keras>`_.
@@ -37,7 +37,7 @@ effortless to use, and have readable source code. It is heavily inspired by
     >>> # Let's donate!
     >>> outputs = [
     >>>     # Wikileaks
-    >>>     ('1HB5XMLmzFVj8ALj6mfBsbifRoD4miY36v', 0.0035, 'btc'),
+    >>>     ('1HB5XMLmzFVj8ALj6mfBsbifRoD4miY36v', 0.0035, 'gzr'),
     >>>     # Internet Archive
     >>>     ('1Archive1n2C579dMsAu3iC6tWzuQJz8dN', 190, 'jpy'),
     >>>     # The Pirate Bay
@@ -89,8 +89,8 @@ Credits
 -------
 
 - Logo courtesy of `<https://textcraft.net>`_
-- `Gregory Maxwell`_ (Bitcoin core dev) for teaching me a bit of `ECC`_ math
-- `arubi`_ in #bitcoin for helping me understand transaction gotchas
+- `Gregory Maxwell`_ (Gozer core dev) for teaching me a bit of `ECC`_ math
+- `arubi`_ in #gozer for helping me understand transaction gotchas
 - `fuzeman`_ for bestowing me the name ``bit`` on the `Python Package Index`_
 
 .. _PyPI: https://pypi.org/project/bit

@@ -6,7 +6,7 @@ Exchange Rates
 Bit gets exchange rate data from trusted third-party APIs. Specifically,
 it can access:
 
-- `<https://bitpay.com/bitcoin-exchange-rates>`_ via :class:`~bit.network.rates.BitpayRates`
+- `<https://bitpay.com/gozer-exchange-rates>`_ via :class:`~bit.network.rates.BitpayRates`
 - `<https://blockchain.info/api/exchange_rates_api>`_ via :class:`~bit.network.rates.BlockchainRates`
 
 RatesAPI
@@ -63,7 +63,7 @@ Supported Currencies
 --------------------
 
 These are all the currencies currently supported by Bit. Note that converting
-satoshi to itself, ubtc, mbtc, or btc never requires exchange rate data and
+satoshi to itself, ugzr, mgzr, or gzr never requires exchange rate data and
 therefore no network calls are needed.
 
 .. code-block:: python
@@ -76,11 +76,11 @@ therefore no network calls are needed.
 +=========+======================+
 | satoshi | Satoshi              |
 +---------+----------------------+
-| ubtc    | Microbitcoin         |
+| ugzr    | Microgozer         |
 +---------+----------------------+
-| mbtc    | Millibitcoin         |
+| mgzr    | Milligozer         |
 +---------+----------------------+
-| btc     | Bitcoin              |
+| gzr     | Gozer              |
 +---------+----------------------+
 | usd     | United States Dollar |
 +---------+----------------------+
@@ -131,5 +131,5 @@ Unsupported Currencies
 ----------------------
 
 If you need to use currencies in your :ref:`transactions` that Bit does not
-support, convert it yourself to satoshi, ubtc, mbtc, or btc as these are
+support, convert it yourself to satoshi, ugzr, mgzr, or gzr as these are
 supported natively.

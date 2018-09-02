@@ -18,7 +18,7 @@ IRC
 ---
 
 You find me in Freenode channels `#python <irc://irc.freenode.net/python>`_
-and `#bitcoin <irc://irc.freenode.net/bitcoin>`_ as ``ofek``.
+and `#gozer <irc://irc.freenode.net/gozer>`_ as ``ofek``.
 
 Email
 -----
